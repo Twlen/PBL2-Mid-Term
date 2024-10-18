@@ -51,14 +51,10 @@ public class MyApp
             // 평균 계산
             averageScore = (double) totalScore / studentGrades.size();
             
-            // 출력: 학생들의 성적, 총점, 평균
-            System.out.println("학생 성적 리스트:");
-            for (String key : studentGrades.keySet()) {
-                System.out.println(key + " : " + studentGrades.get(key));
-            }
-            
+            //학생들의 총점과 평균 출력
+            System.out.println("------ 계산 결과 ------");
             System.out.println("총점: " + totalScore);
-            System.out.printf("평균: %.2f\n", averageScore);
+            System.out.printf("평균: %.1f\n", averageScore);
             
         } catch (FileNotFoundException e) {
             System.out.println("파일을 찾을 수 없습니다: " + filePath);
